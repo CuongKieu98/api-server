@@ -1,6 +1,6 @@
 {
     "redirects": [
-      { "source": "/api/top100", "destination": "/api/top100" },
+      { "source": "/api/top100", "destination": "/api/top100" ,"permanent": false},
       { "source": "/user", "destination": "/api/user", "permanent": false },
       { "source": "/view-source", "destination": "https://github.com/vercel/vercel" },
       {
