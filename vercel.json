@@ -1,8 +1,16 @@
 {
-    "routes": [
-      { "src": "/api/top100", "dest": "/api/top100" },
-      { "src": "/users", "methods": ["POST"], "dest": "/users-api.js" },
-      { "src": "/users/(?<id>[^/]*)", "dest": "/users-api.js?id=$id" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
 
-    ]
-  }
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ]
+}
