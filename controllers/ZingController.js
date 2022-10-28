@@ -1,5 +1,6 @@
 const { ZingMp3 } = require("zingmp3-api-full")
 
+const {zing} = require("zingmp3-api-next")
 class ZingController {
 
   getSong(req, res) {
@@ -16,6 +17,11 @@ class ZingController {
 
   getHome(req, res) {
     ZingMp3.getHome().then((data) => {
+      res.json(data)
+    })
+  }
+  getRadio(req,res) {
+    zing.get_radio(req.query.id).then((data) =>{
       res.json(data)
     })
   }

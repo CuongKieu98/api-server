@@ -11,6 +11,8 @@ router.get("/detailplaylist", ZingController.getDetailPlaylist)
 
 // getHome
 router.get("/home", ZingController.getHome)
+//getRadio
+router.get("/radio", ZingController.getRadio)
 
 // getTop100
 router.get("/top100", ZingController.getTop100)
