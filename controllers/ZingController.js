@@ -44,6 +44,12 @@ class ZingController {
     })
   }
 
+  getNewFeeds(req,res) {
+    zing.get_list_by_genre(req.query.id, req.query.page, req.query.count).then((data) =>{
+      res.json(data);
+    })
+  }
+
   getInfo(req, res) {
     ZingMp3.getInfoSong(req.query.id).then((data) => {
       res.json(data);

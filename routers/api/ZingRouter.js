@@ -14,6 +14,8 @@ router.get("/home", ZingController.getHome)
 //getRadio
 router.get("/radio", ZingController.getRadio)
 
+
+router.get("/new-feeds" ,ZingController.getNewFeeds)
 // getTop100
 router.get("/top100", ZingController.getTop100)
 
